@@ -99,6 +99,7 @@ button:hover{
   height: 100%;
   text-align: justify;
 }
+
 .content input{
   width: 75%;
 }
@@ -197,6 +198,9 @@ button:hover{
 .showcase:hover{
   cursor: pointer;
   transform: scale(1.05);
+}
+.skill_list li{
+    list-style-type: none;
 }
 #projects{
   height: 300px;
