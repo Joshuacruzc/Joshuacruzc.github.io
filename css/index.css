@@ -191,23 +191,21 @@ button:hover{
   border: solid black;
   width: 150px;
   margin: 5px;
-  height: 100px;
+  height: 150px;
   padding: 20px;
   transition: all 0.5s;
 }
 .showcase:hover{
   cursor: pointer;
-  transform: scale(1.05);
+  /*transform: scale(1.05);*/
 }
+
 .skill_list li{
     list-style-type: none;
 }
-#projects{
-  height: 300px;
-}
-#poetry{
-  width: 220px;
-  height: 145px;
+.project-icon {
+    width: 40%;
+    height: 40%;
 }
 #awards{
   width: 220px;
@@ -225,7 +223,7 @@ button:hover{
 @media only screen and (max-width: 650px) {
   #projects{
     height: 150px;
-    width: 310px;
+    width: 150px;
   }
   #poetry{
     width: 150px;
