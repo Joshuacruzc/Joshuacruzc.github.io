@@ -120,9 +120,10 @@ button:hover{
   margin-bottom: 10%;
 }
 .exp-img{
-  margin: auto;
-  display: block;
-  width: 100%;
+    margin: auto;
+    display: block;
+    width: auto;
+    max-height: 250px;
 }
 .exp-caption{
   margin: auto;
@@ -186,6 +187,9 @@ button:hover{
 
 .row{
   justify-content: center;
+}
+.modal-body{
+    text-align: left;
 }
 .showcase{
   border: solid black;
