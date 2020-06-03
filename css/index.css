@@ -1,8 +1,13 @@
+:root {
+    --main-bg-color: #3b4158;
+    --secondary-bg-color: white;
+}
+
 body {
-background-color: #3b4158;
+background-color: var(--main-bg-color);
 }
 section{
-  background-color: white;
+  background-color: var(--secondary-bg-color);
   border-radius: 5px;
 }
 h3 {
@@ -13,6 +18,9 @@ p{
 }
 button:hover{
   cursor: pointer;
+}
+.jumbotron{
+    background-color: var(--secondary-bg-color);
 }
 #wmessage{
   font-size: 1.9em;
@@ -35,7 +43,7 @@ button:hover{
 /* Style the tab */
 .tab {
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: var(--secondary-bg-color);
     text-align: center;
 }
 .tab li{
@@ -70,7 +78,7 @@ button:hover{
 /* Style the tab content */
 .tabcontent {
     text-align: center;
-    background-color: white;
+    background-color: var(--secondary-bg-color);
     display: none;
     padding: 6px 12px;
     margin-bottom:30px;
@@ -210,6 +218,10 @@ button:hover{
 .project-icon {
     width: 40%;
     height: 40%;
+}
+
+.skill-card{
+    margin-bottom: 25px;
 }
 #awards{
   width: 220px;
