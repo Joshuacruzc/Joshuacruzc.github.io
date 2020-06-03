@@ -97,6 +97,11 @@ button:hover{
 #profile{
   width: 100%;
 }
+
+.profile-links{
+    width: 100px;
+    margin: 20px;
+}
 .contact-info{
   text-align: left;
 }
