@@ -1,0 +1,148 @@
+{
+  "experiences": [
+    {
+      "id": "abartys",
+      "positionName": "Full-stack Developer Intern",
+      "companyName": "Abartys Health",
+      "picture": "abartys.jfif",
+      "experienceLocation": "San Juan, Puerto Rico",
+      "startDate": "February 2020",
+      "endDate": "Present",
+      "color": "#3db2cb",
+      "informationBullets": [
+        "Extract data from multiple MySQL Databases to provide insight on customer usage of company products",
+        "Create Dashboard using Django to represent extracted data"
+      ]
+    },
+    {
+      "id": "rumbus",
+      "positionName": "RUMBus Backend Developer",
+      "companyName": "RUMBus Trolley Project",
+      "picture": "rumbus.png",
+      "experienceLocation": "University of Puerto Rico-Mayagüez",
+      "startDate": "November 2019",
+      "endDate": "Present",
+      "color": "darkorange",
+      "informationBullets": [
+        "Build REST Backend using restify framework for NodeJS",
+        "Use Docker to reduce overhead in development environment setup",
+        "Design API tests using the Jest framework"
+      ]
+    },
+    {
+      "id": "ta",
+      "positionName": "Teacher's Aide (Advanced Programming Course)",
+      "companyName": "Computer Science and Engineering Department",
+      "picture": "CSE.png",
+      "experienceLocation": "University of Puerto Rico-Mayagüez",
+      "startDate": "August 2019",
+      "endDate": "Present",
+      "color": "green",
+      "informationBullets": [
+        "Collaborate with Professors, and other Aides to provide useful and diverse learning resources for students taking the course",
+        "Create challenging class projects for applying core course concepts such as Object Oriented Programming, recursion, and sorting using Java",
+        "Administer programming labs, where students apply course concept to programming challenges"
+      ]
+    },
+    {
+      "id": "justice",
+      "positionName": "Confidential Systems Analyst Programmer",
+      "companyName": "General Court of Justice of Puerto Rico",
+      "picture": "rama_judicial.png",
+      "experienceLocation": "Mayagüez, Puerto Rico",
+      "startDate": "June 2018",
+      "endDate": "August 2019",
+      "color": "#69142d",
+      "informationBullets": [
+        "Developed features for a web application using tools such as: Python, Django, JavaScript, jQuery, and PostgreSQL",
+        "Worked on an agile development team employing Scrum framework",
+        "Optimized application testing by designing framework for unit test design using Selenium webdriver tool"
+      ]
+    },
+    {
+      "id": "IEEE",
+      "positionName": "Director of Research & Development",
+      "companyName": "IEEE UPRM Branch",
+      "picture": "r&d.jpeg",
+      "experienceLocation": "University of Puerto Rico-Mayagüez",
+      "startDate": "February 2018",
+      "endDate": "June 2019",
+      "color": "#007bff",
+      "informationBullets": [
+        "During my freshmen year in college, I took on the challenge of directing and organizing the IEEE R&D Program. I led <strong> 10 freshmen students,</strong> such as myself to develop research projects that would impact the student community",
+        "The program itself has the objective to allow all students to become part of a research group from the beginning of their college career"
+      ]
+    },
+    {
+      "id": "uWave",
+      "positionName": "UWave Computer Engineering Team",
+      "companyName": "Unmanned Water Vehicle (UWave)",
+      "picture": "uwave.jpg",
+      "experienceLocation": "University of Puerto Rico-Mayagüez",
+      "startDate": "August 2017",
+      "endDate": "May 2018",
+      "color": "#28911a",
+      "informationBullets": [
+        "Designed algorithm for autonomous navigation of maritime robot using machine vision and digital sensors",
+        "Worked on communication interface between Raspberry Pi 3, Arduino for motor control and navigation",
+        "Worked with multidisciplinary group of students with different project roles"
+      ]
+    },
+    {
+      "id": "scholar",
+      "positionName": "IEEE UPRM Chapter 6th Generation Scholar",
+      "companyName": "IEEE UPRM Chapter Scholar's Program",
+      "picture": "scholars.jpg",
+      "experienceLocation": "University of Puerto Rico-Mayagüez",
+      "startDate": "August 2017",
+      "endDate": "May 2018",
+      "color": "#676775",
+      "informationBullets": [
+        "Was chosen from a group of students to become part of a program aimed to prepare freshmen to become leaders among students while thriving professionally and academically"
+      ]
+    },
+    {
+      "id": "ciesese",
+      "positionName": "Engineering Intern",
+      "companyName": "Consortium for Integrating Energy Systems in Engineering & Science Education (CIESESE)",
+      "picture": "CIESESE.png",
+      "experienceLocation": "Puerto Rico Energy Center (PREC)",
+      "startDate": "June 2017",
+      "endDate": "July 2017",
+      "color": "#28911a",
+      "informationBullets": [
+        "Worked on the control system for a micro-wind turbine, using electrical components such as DC-DC converters, rectifier circuit, voltage and current sensors",
+        "Programmed Arduino as the principal controller of the system"
+      ]
+    },
+    {
+      "id": "prem",
+      "positionName": "Computer Science Research Student",
+      "companyName": "Partnership for Research and Education in Material Science (PREM)",
+      "picture": "prem-logo_0.png",
+      "experienceLocation": "University of Puerto Rico-Humacao",
+      "startDate": "August 2015",
+      "endDate": "July 2017",
+      "color": "orange",
+      "informationBullets": [
+        "Conducted research in Material Science using computational tools, in particular image processing of Confocal Laser Microscope sample",
+        "Created algorithms for extracting data from Molecular Dynamics Simulations to provide numeric insight for material behaviour"
+      ]
+    },
+    {
+      "id": "aeop",
+      "positionName": "Applied Physics Intern",
+      "companyName": "Army Educational Outreach Program (AEOP)",
+      "picture": "aeop.jpg",
+      "experienceLocation": "University of Puerto Rico-Humacao",
+      "startDate": "June 2015",
+      "endDate": "August 2015",
+      "color": "#770891",
+      "informationBullets": [
+        "Engaged in research of nano-materials for electronic applications",
+        "Fabricated alcohol vapor sensors using nano fibers of different polymers",
+        "Experimented with Field effect Transistors using monolayers graphene oxide"
+      ]
+    }
+  ]
+}
