@@ -5,6 +5,7 @@
             <h4>Software</h4>
             <img class="project-icon" src="img/console.png" alt="">
         </div>
+
         <!-- The Modal -->
         <div class="modal" id="project-modal">
             <div class="modal-dialog">
@@ -19,63 +20,29 @@
                     <!-- Modal body -->
                     <div class="modal-body">
                         <div id="accordion-software">
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                        Skipster
-                                    </a>
-                                </div>
-                                <div class="collapse show" data-parent="accordion-software">
-                                    <div class="card-body">
-                                        Python web app that uses Spotify api to build playlists based on user votes.
-                                        <a href="https://github.com/Joshuacruzc/Skipster">View on github</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                        Resumé Builder
-                                    </a>
-                                </div>
-                                <div class="collapse" data-parent="#accordion-software">
-                                    <div class="card-body">
-                                        Python web app that saves Experiences and skills with related tags and uses the tags to
-                                        build relevant resumes into pdf templates.
-                                        <a href="https://github.com/Joshuacruzc/ResumeBuilder">View on github</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                        SemesterKeeper API
-                                    </a>
-                                </div>
-                                <div class="collapse" data-parent="#accordion-software">
-                                    <div class="card-body">
-                                        Python API that dynamically keeps tracks of curriculum and remaining courses.
-                                        <a href="https://github.com/Joshuacruzc/SemesterKeeperAPI">View on github</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse">
-                                        this.website
-                                    </a>
-                                </div>
-                                <div class="collapse" data-parent="#accordion-software">
-                                    <div class="card-body">
-                                        Personal Website to show off skills and experience.
-                                        <a href="https://github.com/Joshuacruzc/Joshuacruzc.github.io">View on github</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <script>
+                                $(function() {
+                                    $.getJSON('projects.json', function (data) {
+                                        $.each(data['software'], function () {
+                                            $('#accordion-software').append(`
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse${this['id']}">
+                                                            ${this['name']}
+                                                        </a>
+                                                    </div>
+                                                    <div id= "collapse${this['id']}" class="collapse" data-parent="#accordion-software">
+                                                        <div class="card-body">
+                                                            ${this['description']}
+                                                            <a href="${this['link']}">View on github</a>
+                                                        </div>
+                                                    </div>
+                                                </div>`
+                                            )
+                                        })
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
 

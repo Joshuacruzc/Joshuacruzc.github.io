@@ -1,0 +1,46 @@
+{
+  "software": [
+    {
+      "id": "skipster",
+      "name":  "Skipster",
+      "description": "Python web app that uses Spotify api to build playlists based on user votes.",
+      "link": "https://github.com/Joshuacruzc/Skipster"
+    },
+    {
+      "id": "CA-API",
+      "name":  "CurriculumAlgorithm (API)",
+      "description": "Python API that dynamically keeps tracks of curriculum and remaining courses.",
+      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm"
+    },
+    {
+      "id": "CA-CLIENT",
+      "name":  "CurriculumAlgorithm (Client)",
+      "description": "React Client for Curriculum Algorithm API, uses drag and drop to move courses across semesters.",
+      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm-ReactClient"
+    },
+    {
+      "id": "CH-API",
+      "name":  "CollegeHousing (API)",
+      "description": "Provides API for application that stores and indexes college housing near a desired area.",
+      "link": "https://github.com/Joshuacruzc/CollegeHousingAPI"
+    },
+    {
+      "id": "CH-CLIENT",
+      "name":  "CollegeHousing (Mobile Client)",
+      "description": "React Native client for CollegeHousingAPI.",
+      "link": "https://github.com/Joshuacruzc/CollegeHousingApp"
+    },
+    {
+      "id": "ui-test",
+      "name":  "uitestframework",
+      "description": "Small Python framework for user interface testing using selenium and Page Object Model.",
+      "link": "https://github.com/Joshuacruzc/uitestframework"
+    },
+    {
+      "id": "personal-website",
+      "name":  "Personal Portfolio (This Website)",
+      "description": "Personal Website to show off skills and experience.",
+      "link": "https://github.com/Joshuacruzc/Joshuacruzc.github.io"
+    }
+  ]
+}
