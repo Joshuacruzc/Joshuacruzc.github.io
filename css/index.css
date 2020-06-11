@@ -136,7 +136,8 @@ button:hover{
     margin: auto;
     display: block;
     width: auto;
-    max-height: 250px;
+    max-height: 200px;
+    max-width: 300px;
 }
 .exp-caption{
   margin: auto;
