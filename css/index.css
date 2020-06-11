@@ -8,7 +8,6 @@ background-color: var(--main-bg-color);
 }
 section{
   background-color: var(--secondary-bg-color);
-  border-radius: 5px;
 }
 h3 {
   color: #3b4158;
@@ -19,10 +18,10 @@ p{
 button:hover{
   cursor: pointer;
 }
-.jumbotron{
-    background-color: var(--secondary-bg-color);
+.navbar{
+    /*width:95%;*/
+    margin: auto;
 }
-
 
 #wmessage{
   font-size: 1.9em;
@@ -80,14 +79,23 @@ button:hover{
     background-color: #ccc;
 }
 
+.tabcontent:before {
+    height: 54px;
+    content: "";
+    display:block;
+}
+
 /* Style the tab content */
 .tabcontent {
     text-align: center;
-    background-color: var(--secondary-bg-color);
+    /*background-color: var(--secondary-bg-color);*/
     padding: 6px 12px;
-    margin-bottom:15px;
+    /*margin-bottom:15px;*/
     padding-bottom: 30px;
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
+    /*width: 95%;*/
+    margin: auto;
+    min-height: 50vh;
 }
 .tabcontent {
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
