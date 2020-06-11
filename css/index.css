@@ -22,6 +22,8 @@ button:hover{
 .jumbotron{
     background-color: var(--secondary-bg-color);
 }
+
+
 #wmessage{
   font-size: 1.9em;
   text-align: center;
@@ -45,6 +47,9 @@ button:hover{
     border: 1px solid #ccc;
     background-color: var(--secondary-bg-color);
     text-align: center;
+    top: 0px;
+    z-index: 1;
+    position: sticky;
 }
 .tab li{
   text-decoration: none;
@@ -79,9 +84,8 @@ button:hover{
 .tabcontent {
     text-align: center;
     background-color: var(--secondary-bg-color);
-    display: none;
     padding: 6px 12px;
-    margin-bottom:30px;
+    margin-bottom:15px;
     padding-bottom: 30px;
     border: 1px solid #ccc;
 }
