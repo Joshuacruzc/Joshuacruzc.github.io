@@ -240,6 +240,11 @@ button:hover{
 
 .skill-card{
     margin-bottom: 25px;
+    text-align: left;
+    /*width: 25%;*/
+}
+.skill-icon{
+    width: 35px;
 }
 #awards{
   width: 220px;
@@ -253,6 +258,9 @@ button:hover{
   text-align: right;
   font-style: italic;
   margin-left: 75%;
+}
+#footer{
+    text-align: center;
 }
 @media only screen and (max-width: 650px) {
   #projects{
