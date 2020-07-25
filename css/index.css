@@ -151,6 +151,9 @@ button:hover{
     max-height: 200px;
     max-width: 300px;
 }
+.modal-footer{
+    justify-content: space-around;
+}
 .exp-caption{
   margin: auto;
   display: block;

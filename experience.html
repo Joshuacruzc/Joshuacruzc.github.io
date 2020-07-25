@@ -36,11 +36,15 @@
                                         <div class="modal-body">
                                             <ul id="${this['id']}InformationBullets">
                                             </ul>
+
                                         </div>
 
                                         <!-- Modal footer -->
                                         <div class="modal-footer">
-                                            <button style="background-color:${this['color']};border:${this['color']}" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                             <div id="${this['id']}SkillIcons">
+                                                <h6>Related Skills/Tools:</h6>
+                                              </div>
+<!--                                            <button style="background-color:${this['color']};border:${this['color']}" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
                                         </div>
 
                                     </div>
@@ -52,6 +56,10 @@
                 $.each(this['informationBullets'], function(){
                     $("#" + id + "InformationBullets").append(`<li>${this}</li>`)
                 })
+                $.each(this['skills'], function(){
+                    $("#" + id + "SkillIcons").append(`<img class="skill-icon" data-toggle="tooltip" data-placement="top" title=${this} src="img/icons/${this}.png" alt="">`)
+                })
+                $('[data-toggle="tooltip"]').tooltip();
             })
         })
     })

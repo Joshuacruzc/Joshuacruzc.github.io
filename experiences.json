@@ -12,6 +12,17 @@
       "informationBullets": [
         "Extract data from multiple MySQL Databases to provide insight on customer usage of company products",
         "Create Dashboard using Django to represent extracted data"
+      ],
+      "skills": [
+        "python",
+        "django",
+        "sql",
+        "javascript",
+        "jquery",
+        "git",
+        "html",
+        "css",
+        "jira"
       ]
     },
     {
@@ -27,6 +38,15 @@
         "Build REST Backend using restify framework for NodeJS",
         "Use Docker to reduce overhead in development environment setup",
         "Design API tests using the Jest framework"
+      ],
+      "skills": [
+        "javascript",
+        "restify",
+        "nodejs",
+        "docker",
+        "mariadb",
+        "sql",
+        "git"
       ]
     },
     {
@@ -42,6 +62,12 @@
         "Collaborate with Professors, and other Aides to provide useful and diverse learning resources for students taking the course",
         "Create challenging class projects for applying core course concepts such as Object Oriented Programming, recursion, and sorting using Java",
         "Administer programming labs, where students apply course concept to programming challenges"
+      ],
+      "skills": [
+        "java",
+        "c++",
+        "openframeworks",
+        "git"
       ]
     },
     {
@@ -57,6 +83,19 @@
         "Developed features for a web application using tools such as: Python, Django, JavaScript, jQuery, and PostgreSQL",
         "Worked on an agile development team employing Scrum framework",
         "Optimized application testing by designing framework for unit test design using Selenium webdriver tool"
+      ],
+      "skills": [
+        "python",
+        "django",
+        "sql",
+        "postgresql",
+        "javascript",
+        "jquery",
+        "git",
+        "jenkins",
+        "jira",
+        "html",
+        "css"
       ]
     },
     {
@@ -71,6 +110,11 @@
       "informationBullets": [
         "During my freshmen year in college, I took on the challenge of directing and organizing the IEEE R&D Program. I led <strong> 10 freshmen students,</strong> such as myself to develop research projects that would impact the student community",
         "The program itself has the objective to allow all students to become part of a research group from the beginning of their college career"
+      ],
+      "skills": [
+        "python",
+        "public-speaking",
+        "leadership"
       ]
     },
     {
@@ -86,6 +130,12 @@
         "Designed algorithm for autonomous navigation of maritime robot using machine vision and digital sensors",
         "Worked on communication interface between Raspberry Pi 3, Arduino for motor control and navigation",
         "Worked with multidisciplinary group of students with different project roles"
+      ],
+      "skills": [
+        "python",
+        "c++",
+        "raspberry-pi",
+        "arduino"
       ]
     },
     {
@@ -99,6 +149,9 @@
       "color": "#676775",
       "informationBullets": [
         "Was chosen from a group of students to become part of a program aimed to prepare freshmen to become leaders among students while thriving professionally and academically"
+      ],
+      "skills": [
+        "leadership"
       ]
     },
     {
@@ -113,6 +166,11 @@
       "informationBullets": [
         "Worked on the control system for a micro-wind turbine, using electrical components such as DC-DC converters, rectifier circuit, voltage and current sensors",
         "Programmed Arduino as the principal controller of the system"
+      ],
+      "skills": [
+        "c++",
+        "arduino",
+        "public-speaking"
       ]
     },
     {
@@ -127,6 +185,11 @@
       "informationBullets": [
         "Conducted research in Material Science using computational tools, in particular image processing of Confocal Laser Microscope sample",
         "Created algorithms for extracting data from Molecular Dynamics Simulations to provide numeric insight for material behaviour"
+      ],
+      "skills": [
+        "python",
+        "git",
+        "research"
       ]
     },
     {
@@ -142,6 +205,9 @@
         "Engaged in research of nano-materials for electronic applications",
         "Fabricated alcohol vapor sensors using nano fibers of different polymers",
         "Experimented with Field effect Transistors using monolayers graphene oxide"
+      ],
+      "skills": [
+        "Research"
       ]
     }
   ]
