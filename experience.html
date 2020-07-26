@@ -1,57 +1,54 @@
 <h3>Experience</h3>
 <br>
 <div id="experiences" class="container">
+    <div class="row justify-content-center">
+    </div>
 </div>
 <script>
     $(function(){
         $.getJSON('experiences.json', function(data){
             $.each(data['experiences'], function(){
-                $('#experiences').append(`
-                    <div class="row">
-                        <div class="col-md-6 ">
-                            <img class="exp-img" src="img/exp/${this['picture']}" alt="${this['positionName']}">
-                        </div>
-                        <div class="exp-caption col-md-6">
-                            <h3>${this['positionName']}</h3>
-                            <p>${this['companyName']}<br>
-                                ${this['experienceLocation']}<br>
-                                <strong>${this['startDate']}- ${this['endDate']}</strong></p>
-                            <!-- Button to Open the Modal -->
-                            <button style="background-color:${this['color']};" type="button" class="btn btn-primary" data-toggle="modal" data-target="#${this['id']}Modal">
-                                About this experience
-                            </button>
+                $('#experiences').find(".row").append(`
+                        <div class=" col-md-8 col-lg-6 col-xs-12 mb-3">
+                            <div class="card h-100 bg-extra-light text-extra-dark ">
+                                <div class="card-body ">
+                                  <img class="exp-img" src="img/exp/${this['picture']}" alt="${this['positionName']}">
 
-                            <!-- The Modal -->
-                            <div class="modal" id="${this['id']}Modal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">${this['companyName']}</h4>
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3>${this['positionName']}</h3>
+                                    <p>${this['companyName']}<br>
+                                        ${this['experienceLocation']}<br>
+                                        <strong>${this['startDate']}- ${this['endDate']}</strong></p>
+                                       <!-- Button to Open the Modal -->
+                                    <button  type="button" class="btn btn-dark" data-toggle="modal" data-target="#${this['id']}Modal">
+                                        About this experience
+                                       </button>
+                                    <!-- The Modal -->
+                                    <div class="modal" id="${this['id']}Modal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">${this['companyName']}</h4>
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <ul id="${this['id']}InformationBullets">
+                                                    </ul>
+                                                </div>
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                     <div id="${this['id']}SkillIcons">
+                                                        <h6>Related Skills/Tools:</h6>
+                                                      </div>
+                                                </div>
+                                            </div>
                                         </div>
-
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <ul id="${this['id']}InformationBullets">
-                                            </ul>
-
-                                        </div>
-
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                             <div id="${this['id']}SkillIcons">
-                                                <h6>Related Skills/Tools:</h6>
-                                              </div>
-<!--                                            <button style="background-color:${this['color']};border:${this['color']}" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>`)
+                    `)
                 let id = this['id'];
                 $.each(this['informationBullets'], function(){
                     $("#" + id + "InformationBullets").append(`<li>${this}</li>`)

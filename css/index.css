@@ -1,20 +1,4 @@
-:root {
-    --main-bg-color: #3b4158;
-    --secondary-bg-color: white;
-}
 
-body {
-background-color: var(--main-bg-color);
-}
-section{
-  background-color: var(--secondary-bg-color);
-}
-h3 {
-  color: #3b4158;
-}
-p{
-  font-size: 18px;
-}
 button:hover{
   cursor: pointer;
 }
@@ -125,16 +109,7 @@ button:hover{
   text-align: justify;
 }
 
-.content input{
-  width: 75%;
-}
-.content textarea{
-  width: 75%;
-  height:30%;
-}
-.content button{
-  margin-left: 75%;
-}
+
 .seal{
   width: 50%;
 }
@@ -142,7 +117,10 @@ button:hover{
   padding: 30px;
 }
 #experience .row{
-  margin-bottom: 10%;
+  /*margin-bottom: 10%;*/
+    padding: 25px;
+    border-radius: 50px;
+
 }
 .exp-img{
     margin: auto;
@@ -150,6 +128,8 @@ button:hover{
     width: auto;
     max-height: 200px;
     max-width: 300px;
+}
+.exp-card{
 }
 .modal-footer{
     justify-content: space-around;
@@ -214,6 +194,17 @@ button:hover{
     background-color: #5a5ec3;
 }
 
+.bg-black{
+    background-color: #121212;
+}
+
+.bg-extra-light{
+    background-color: #f8f9fa; !important;
+}
+
+.text-extra-dark{
+    color:#343a40 !important
+}
 .row{
   justify-content: center;
 }
@@ -235,6 +226,11 @@ button:hover{
 
 .skill_list li{
     list-style-type: none;
+}
+
+.list-group-item{
+    background-color: inherit;
+    border: 5px solid inherit;
 }
 .project-icon {
     width: 40%;

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light text-dark">
   <a class="navbar-brand" href="#"><img style="width: 20px" rel="icon" src="img/favicon.png"></button></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -36,27 +36,32 @@
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
       </li>
+
     </ul>
+    <span class="d-flex flex-fill"></span>
+    <div>
+      <button onclick="changeTheme()"><img src="img/icons/change-theme.png"></button>
+    </div>
   </div>
 </nav>
-  <div id="header" class="tabcontent bg-light">
+  <div id="header" class="tabcontent bg-light text-dark">
   </div>
   <!-- Tab content -->
-  <div id="about" class="tabcontent bg-white">
+  <div id="about" class="tabcontent bg-white text-dark">
   </div>
-  <div id="education" class="tabcontent bg-light">
+  <div id="education" class="tabcontent bg-light text-dark">
 
   </div>
-  <div id="experience" class="tabcontent bg-white">
+  <div id="experience" class="tabcontent bg-white text-dark">
   </div>
-  <div id="skills" class="tabcontent bg-light">
+  <div id="skills" class="tabcontent bg-light text-dark">
 
   </div>
-  <div id="gallery" class="tabcontent bg-white">
+  <div id="gallery" class="tabcontent bg-white text-dark">
   </div>
-  <div id="contact" class="tabcontent bg-light">
+  <div id="contact" class="tabcontent bg-light text-dark">
   </div>
-  <div id="footer" class="bg-white">
+  <div id="footer" class="bg-white text-dark">
     <p>Icons by <a href="https://icons8.com/icons">Icons8</a></p>
   </div>
 <!--  <script src="js/tab.js"></script>-->
@@ -64,6 +69,31 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script>
+    let theme = "light"
+    function changeTheme() {
+      if(theme === "light"){
+        theme = "dark";
+        $(".bg-light").addClass("bg-dark");
+        $(".navbar-light").addClass("navbar-dark");
+        $(".navbar-light").removeClass("navbar-light");
+        $(".text-dark").addClass("text-white");
+        $(".text-dark").removeClass("text-dark")
+        $(".bg-white").addClass("bg-black");
+        $(".bg-white").removeClass("bg-white")
+        $(".bg-light").removeClass("bg-light");
+      }else{
+        theme = "light";
+        $(".bg-dark").addClass("bg-light");
+        $(".navbar-dark").addClass("navbar-light");
+        $(".navbar-dark").removeClass("navbar-dark");
+        $(".text-white").addClass("text-dark");
+        $(".text-white").removeClass("text-white")
+        $(".bg-black").addClass("bg-white");
+        $(".bg-black").removeClass("bg-black")
+        $(".bg-dark").removeClass("bg-dark");
+      }
+
+    }
     $(function(){
       $("#header").load("header.html");
       $("#about").load("about.html");
@@ -72,8 +102,8 @@
       $("#skills").load("skills.html");
       $("#gallery").load("gallery.html");
       $("#contact").load("contact.html");
-    });
 
+    });
   </script>
 </body>
 </html>
