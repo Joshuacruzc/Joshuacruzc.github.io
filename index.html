@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body class="bg-white">
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light text-dark">
   <a class="navbar-brand" href="#"><img style="width: 20px" rel="icon" src="img/favicon.png"></button></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,6 +81,8 @@
         $(".bg-white").addClass("bg-black");
         $(".bg-white").removeClass("bg-white")
         $(".bg-light").removeClass("bg-light");
+        $("#githubLogo").attr("src", "img/icons/github-light.png");
+        $("#wmessage").css("border-right", "0.1em solid white");
       }else{
         theme = "light";
         $(".bg-dark").addClass("bg-light");
@@ -91,6 +93,8 @@
         $(".bg-black").addClass("bg-white");
         $(".bg-black").removeClass("bg-black")
         $(".bg-dark").removeClass("bg-dark");
+        $("#githubLogo").attr("src", "img/icons/github.png");
+        $("#wmessage").css("border-right", "0.1em solid black");
       }
 
     }

@@ -28,7 +28,6 @@ button:hover{
 /* Style the tab */
 .tab {
     border: 1px solid #ccc;
-    background-color: var(--secondary-bg-color);
     text-align: center;
     top: 0px;
     z-index: 1;
@@ -140,7 +139,7 @@ button:hover{
 }
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4c50af !important;
+    /*background-color: #109648 !important;*/
     color: white;
     padding: 16px;
     font-size: 16px;
