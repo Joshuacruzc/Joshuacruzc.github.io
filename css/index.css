@@ -124,7 +124,7 @@ button:hover{
 .exp-img{
     margin: auto;
     display: block;
-    width: auto;
+    width: 100%;
     max-height: 200px;
     max-width: 300px;
 }

@@ -4,43 +4,88 @@
       "id": "skipster",
       "name":  "Skipster",
       "description": "Python web app that uses Spotify api to build playlists based on user votes.",
-      "link": "https://github.com/Joshuacruzc/Skipster"
+      "link": "https://github.com/Joshuacruzc/Skipster",
+      "skills": [
+        "python",
+        "flask",
+        "javascript",
+        "bootstrap",
+        "git"
+      ]
     },
     {
       "id": "CA-API",
       "name":  "CurriculumAlgorithm (API)",
       "description": "Python API that dynamically keeps tracks of curriculum and remaining courses.",
-      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm"
+      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm",
+      "skills": [
+        "python",
+        "django",
+        "postgresql",
+        "heroku",
+        "travis",
+        "docker",
+        "git"
+
+      ]
     },
     {
       "id": "CA-CLIENT",
       "name":  "CurriculumAlgorithm (Client)",
       "description": "React Client for Curriculum Algorithm API, uses drag and drop to move courses across semesters.",
-      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm-ReactClient"
+      "link": "https://github.com/Joshuacruzc/CurriculumAlgorithm-ReactClient",
+      "skills": [
+        "javascript",
+        "react",
+        "git"
+      ]
     },
     {
       "id": "CH-API",
       "name":  "CollegeHousing (API)",
       "description": "Provides API for application that stores and indexes college housing near a desired area.",
-      "link": "https://github.com/Joshuacruzc/CollegeHousingAPI"
+      "link": "https://github.com/Joshuacruzc/CollegeHousingAPI",
+      "skills": [
+        "python",
+        "django",
+        "postgresql",
+        "git"
+      ]
     },
     {
       "id": "CH-CLIENT",
       "name":  "CollegeHousing (Mobile Client)",
       "description": "React Native client for CollegeHousingAPI.",
-      "link": "https://github.com/Joshuacruzc/CollegeHousingApp"
+      "link": "https://github.com/Joshuacruzc/CollegeHousingApp",
+      "skills": [
+        "javascript",
+        "react",
+        "git"
+      ]
     },
     {
       "id": "ui-test",
       "name":  "uitestframework",
       "description": "Small Python framework for user interface testing using selenium and Page Object Model.",
-      "link": "https://github.com/Joshuacruzc/uitestframework"
+      "link": "https://github.com/Joshuacruzc/uitestframework",
+      "skills": [
+        "python",
+        "selenium"
+      ]
     },
     {
       "id": "personal-website",
       "name":  "Personal Portfolio (This Website)",
       "description": "Personal Website to show off skills and experience.",
-      "link": "https://github.com/Joshuacruzc/Joshuacruzc.github.io"
+      "link": "https://github.com/Joshuacruzc/Joshuacruzc.github.io",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "jquery",
+        "bootstrap",
+        "git"
+      ]
     }
   ]
 }

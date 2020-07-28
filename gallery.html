@@ -1,219 +1,200 @@
 <h3>Projects</h3>
-<div class="row">
-    <div class="col-xs-6">
-        <div class="showcase" id="projects" data-toggle="modal" data-target="#project-modal">
-            <h4>Software</h4>
-            <img class="project-icon" src="img/console.png" alt="">
-        </div>
-
-        <!-- The Modal -->
-        <div class="modal" id="project-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Software</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div id="accordion-software">
-                            <script>
-                                $(function() {
-                                    $.getJSON('projects.json', function (data) {
-                                        $.each(data['software'], function () {
-                                            $('#accordion-software').append(`
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapse${this['id']}">
-                                                            ${this['name']}
-                                                        </a>
-                                                    </div>
-                                                    <div id= "collapse${this['id']}" class="collapse" data-parent="#accordion-software">
-                                                        <div class="card-body">
-                                                            ${this['description']}
-                                                            <a href="${this['link']}">View on github</a>
-                                                        </div>
-                                                    </div>
-                                                </div>`
-                                            )
-                                        })
-                                    })
-                                })
-                            </script>
-                        </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-6">
-        <div class="showcase  d-inline-block" id="poetry" data-toggle="modal" data-target="#poetry-modal">
-            <h4>Poetry</h4>
-            <img class="project-icon" src="img/quill.png" alt="">
-        </div>
-        <!-- The Modal -->
-        <div class="modal" id="poetry-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Poetry</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div id="accordion-poetry">
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                        Ship in a Bottle
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="collapse show" data-parent="#accordion-poetry">
-                                    <div class="card-body">
-                                        Life's a ship in a bottle,<br>
-                                        liberty, a galleon trapped whole<br>
-                                        navigating a full throttle,<br>
-                                        trying to escape through a small hole,<br>
-                                        and with every moment's pass,<br>
-                                        the ship remains in its hold<br>
-                                        for although the bottle is of glass,<br>
-                                        the captain was never told.<br>
-                                        <span class="signature">-J. Cruz </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                        Early Mustn't Be
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion-poetry">
-                                    <div class="card-body">
-                                        When word be spoken<br>
-                                        with idle technique,<br>
-                                        and dawn awoken<br>
-                                        with the answers we seek,<br>
-                                        the night will fall<br>
-                                        with little to keep,<br>
-                                        and the nightmares will call,<br>
-                                        to sway us to sleep,<br>
-                                        for the knowledge of all<br>
-                                        early mustn't be.<br>
-                                        <span class="signature">-J. Cruz </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                        Pride, Maize to the Crow
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion-poetry">
-                                    <div class="card-body">
-                                        An improper thought,<br>
-                                        that which we believe to know,<br>
-                                        to ignore a freedom which others fought.<br>
-                                        to obtain what cannot be owned.<br>
-                                        The future that they sought,<br>
-                                        a victory acquired slow,<br>
-                                        attributes left to rot.<br>
-                                        to which love is left to show.<br>
-                                        While we work, not,<br>
-                                        the ground is left to plow,<br>
-                                        a white dove has been shot,<br>
-                                        by a murderous black crow,<br>
-                                        for a glimpse of our pride it has caught,<br>
-                                        and a glipse of madness it has shown.<br>
-                                        <span class="signature">-J. Cruz </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!--        <div class="showcase  d-inline-block" id="awards" data-toggle="modal" data-target="#awards-modal">-->
-        <!--          <h4>Awards</h4>-->
-        <!--          <img src="img/awards.png">-->
-        <!--        </div>-->
-        <!-- The Modal -->
-        <div class="modal" id="awards-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Awards</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <p> SOON
-                        </p>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!--        <div class="showcase" id="research" data-toggle="modal" data-target="#research-modal">-->
-        <!--          <h4>Research</h4>-->
-        <!--          <img src="img/research.png">-->
-        <!--        </div>-->
-        <!-- The Modal -->
-        <div class="modal" id="research-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Research</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <p> SOON
-                        </p>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<div id="software-projects" class="container">
+    <div class="row justify-content-center">
     </div>
 </div>
+<script>
+    $(function() {
+        $.getJSON('projects.json', function (data) {
+            $.each(data['software'], function () {
+                $('#software-projects').find(".row").append(`
+                    <div class="col-lg-4 mb-3">
+                        <div class="card bg-extra-light text-extra-dark h-100">
+                            <div class="card-header">
+                                    ${this['name']}
+                            </div>
+                            <div class="card-body">
+                                    ${this['description']}<br>
+                                    <div id="${this['id']}SkillIcons">
+                                        <h6>Related Skills/Tools:</h6>
+                                    </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="${this['link']}">View on github</a>
+                            </div>
+                        </div>
+                    </div>`
+                )
+                let id = this['id'];
+                $.each(this['skills'], function(){
+                    $("#" + id + "SkillIcons").append(`<img class="skill-icon" data-toggle="tooltip" data-placement="top" title=${this} src="img/icons/${this}.png" alt="">`)
+                });
+                $('[data-toggle="tooltip"]').tooltip();
+            })
+        })
+    })
+</script>
+
+<!--<div class="row">-->
+<!--    <div class="col-xs-6">-->
+<!--        <div class="showcase  d-inline-block" id="poetry" data-toggle="modal" data-target="#poetry-modal">-->
+<!--            <h4>Poetry</h4>-->
+<!--            <img class="project-icon" src="img/quill.png" alt="">-->
+<!--        </div>-->
+<!--        &lt;!&ndash; The Modal &ndash;&gt;-->
+<!--        <div class="modal" id="poetry-modal">-->
+<!--            <div class="modal-dialog">-->
+<!--                <div class="modal-content">-->
+
+<!--                    &lt;!&ndash; Modal Header &ndash;&gt;-->
+<!--                    <div class="modal-header">-->
+<!--                        <h4 class="modal-title">Poetry</h4>-->
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal body &ndash;&gt;-->
+<!--                    <div class="modal-body">-->
+<!--                        <div id="accordion-poetry">-->
+
+<!--                            <div class="card">-->
+<!--                                <div class="card-header">-->
+<!--                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">-->
+<!--                                        Ship in a Bottle-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div id="collapseOne" class="collapse show" data-parent="#accordion-poetry">-->
+<!--                                    <div class="card-body">-->
+<!--                                        Life's a ship in a bottle,<br>-->
+<!--                                        liberty, a galleon trapped whole<br>-->
+<!--                                        navigating a full throttle,<br>-->
+<!--                                        trying to escape through a small hole,<br>-->
+<!--                                        and with every moment's pass,<br>-->
+<!--                                        the ship remains in its hold<br>-->
+<!--                                        for although the bottle is of glass,<br>-->
+<!--                                        the captain was never told.<br>-->
+<!--                                        <span class="signature">-J. Cruz </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="card">-->
+<!--                                <div class="card-header">-->
+<!--                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">-->
+<!--                                        Early Mustn't Be-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div id="collapseTwo" class="collapse" data-parent="#accordion-poetry">-->
+<!--                                    <div class="card-body">-->
+<!--                                        When word be spoken<br>-->
+<!--                                        with idle technique,<br>-->
+<!--                                        and dawn awoken<br>-->
+<!--                                        with the answers we seek,<br>-->
+<!--                                        the night will fall<br>-->
+<!--                                        with little to keep,<br>-->
+<!--                                        and the nightmares will call,<br>-->
+<!--                                        to sway us to sleep,<br>-->
+<!--                                        for the knowledge of all<br>-->
+<!--                                        early mustn't be.<br>-->
+<!--                                        <span class="signature">-J. Cruz </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="card">-->
+<!--                                <div class="card-header">-->
+<!--                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">-->
+<!--                                        Pride, Maize to the Crow-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div id="collapseThree" class="collapse" data-parent="#accordion-poetry">-->
+<!--                                    <div class="card-body">-->
+<!--                                        An improper thought,<br>-->
+<!--                                        that which we believe to know,<br>-->
+<!--                                        to ignore a freedom which others fought.<br>-->
+<!--                                        to obtain what cannot be owned.<br>-->
+<!--                                        The future that they sought,<br>-->
+<!--                                        a victory acquired slow,<br>-->
+<!--                                        attributes left to rot.<br>-->
+<!--                                        to which love is left to show.<br>-->
+<!--                                        While we work, not,<br>-->
+<!--                                        the ground is left to plow,<br>-->
+<!--                                        a white dove has been shot,<br>-->
+<!--                                        by a murderous black crow,<br>-->
+<!--                                        for a glimpse of our pride it has caught,<br>-->
+<!--                                        and a glipse of madness it has shown.<br>-->
+<!--                                        <span class="signature">-J. Cruz </span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal footer &ndash;&gt;-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;        <div class="showcase  d-inline-block" id="awards" data-toggle="modal" data-target="#awards-modal">&ndash;&gt;-->
+<!--        &lt;!&ndash;          <h4>Awards</h4>&ndash;&gt;-->
+<!--        &lt;!&ndash;          <img src="img/awards.png">&ndash;&gt;-->
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash; The Modal &ndash;&gt;-->
+<!--        <div class="modal" id="awards-modal">-->
+<!--            <div class="modal-dialog">-->
+<!--                <div class="modal-content">-->
+
+<!--                    &lt;!&ndash; Modal Header &ndash;&gt;-->
+<!--                    <div class="modal-header">-->
+<!--                        <h4 class="modal-title">Awards</h4>-->
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal body &ndash;&gt;-->
+<!--                    <div class="modal-body">-->
+<!--                        <p> SOON-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal footer &ndash;&gt;-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;        <div class="showcase" id="research" data-toggle="modal" data-target="#research-modal">&ndash;&gt;-->
+<!--        &lt;!&ndash;          <h4>Research</h4>&ndash;&gt;-->
+<!--        &lt;!&ndash;          <img src="img/research.png">&ndash;&gt;-->
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash; The Modal &ndash;&gt;-->
+<!--        <div class="modal" id="research-modal">-->
+<!--            <div class="modal-dialog">-->
+<!--                <div class="modal-content">-->
+
+<!--                    &lt;!&ndash; Modal Header &ndash;&gt;-->
+<!--                    <div class="modal-header">-->
+<!--                        <h4 class="modal-title">Research</h4>-->
+<!--                        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal body &ndash;&gt;-->
+<!--                    <div class="modal-body">-->
+<!--                        <p> SOON-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Modal footer &ndash;&gt;-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
