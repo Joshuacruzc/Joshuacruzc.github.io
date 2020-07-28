@@ -124,9 +124,9 @@ button:hover{
 .exp-img{
     margin: auto;
     display: block;
-    width: 100%;
+    width: auto;
     max-height: 200px;
-    max-width: 300px;
+    max-width: 80%;
 }
 .exp-card{
 }
