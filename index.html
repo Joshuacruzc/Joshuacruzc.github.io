@@ -40,7 +40,7 @@
     </ul>
     <span class="d-flex flex-fill"></span>
     <div>
-      <button class="btn btn-light" onclick="changeTheme()"><img src="img/icons/change-theme.png"></button>
+      <button class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="toggle theme" onclick="changeTheme()"><img src="img/icons/change-theme.png"></button>
     </div>
   </div>
 </nav>
@@ -64,11 +64,13 @@
   <div id="footer" class="bg-white text-dark">
     <p>Icons by <a href="https://icons8.com/icons">Icons8</a></p>
   </div>
-<!--  <script src="js/tab.js"></script>-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <script>
+    // This is to activate the tooltip for the change theme button
+    $('[data-toggle="tooltip"]').tooltip();
     let theme = "light"
     function changeTheme() {
       if(theme === "light"){
