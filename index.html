@@ -75,28 +75,41 @@
     function changeTheme() {
       if(theme === "light"){
         theme = "dark";
-        $(".bg-light").addClass("bg-dark");
+        $(".bg-light").addClass("bg-darkish");
+        $(".bg-light").removeClass("bg-light");
+
         $(".navbar-light").addClass("navbar-dark");
         $(".navbar-light").removeClass("navbar-light");
+
         $(".text-dark").addClass("text-white");
         $(".text-dark").removeClass("text-dark")
+
         $(".bg-white").addClass("bg-black");
-        $(".bg-white").removeClass("bg-white")
-        $(".bg-light").removeClass("bg-light");
+        $(".bg-white").removeClass("bg-white");
+
         $("#githubLogo").attr("src", "img/icons/github-light.png");
+
         $("#wmessage").css("border-right", "0.1em solid white");
+
+        $(".elevated-content").addClass("bg-content-dark");
+        $(".elevated-content").removeClass("bg-darkish");
+
       }else{
         theme = "light";
-        $(".bg-dark").addClass("bg-light");
+        $(".bg-darkish").addClass("bg-light");
         $(".navbar-dark").addClass("navbar-light");
         $(".navbar-dark").removeClass("navbar-dark");
         $(".text-white").addClass("text-dark");
         $(".text-white").removeClass("text-white")
         $(".bg-black").addClass("bg-white");
         $(".bg-black").removeClass("bg-black")
-        $(".bg-dark").removeClass("bg-dark");
+        $(".bg-darkish").removeClass("bg-darkish");
         $("#githubLogo").attr("src", "img/icons/github.png");
         $("#wmessage").css("border-right", "0.1em solid black");
+        $(".elevated-content").removeClass("bg-content-dark");
+        $(".elevated-content").addClass("bg-light");
+        $(".elevated-content").removeClass("bg-content-dark");
+        $(".elevated-content").addClass("bg-light");
       }
 
     }

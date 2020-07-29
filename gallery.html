@@ -9,7 +9,7 @@
             $.each(data['software'], function () {
                 $('#software-projects').find(".row").append(`
                     <div class="col-lg-4 mb-3">
-                        <div class="card bg-extra-light text-extra-dark h-100">
+                        <div class="card bg-light elevated-content text-dark h-100">
                             <div class="card-header">
                                     ${this['name']}
                             </div>
@@ -20,7 +20,9 @@
                                     </div>
                             </div>
                             <div class="card-footer">
-                                <a class="text-success" target="_blank" href="${this['link']}">View on github</a>
+                                <a target="_blank" href="${this['link']}"><button  type="button" class="btn bg-accent" data-toggle="modal" data-target="#${this['id']}Modal">
+                                        View on github
+                                       </button></a>
                             </div>
                         </div>
                     </div>`

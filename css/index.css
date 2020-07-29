@@ -192,17 +192,29 @@ button:hover{
 .dropdown:hover .dropbtn {
     background-color: #5a5ec3;
 }
-
-.bg-black{
-    background-color: #121212;
+.bg-content-dark{
+    background-color: #525252;
 }
 
+.text-accent{
+    color:  #ca3e47; !important;
+}
+.bg-accent{
+    background-color: #ca3e47; !important;
+    color: white !important
+}
+.bg-black{
+    background-color: #313131;
+}
+.bg-darkish{
+    background-color: #414141;!important;
+}
 .bg-extra-light{
     background-color: #f8f9fa; !important;
 }
 
 .text-extra-dark{
-    color:#343a40 !important
+    color:#343a40 !important;
 }
 .row{
   justify-content: center;
@@ -244,34 +256,7 @@ button:hover{
 .skill-icon{
     width: 35px;
 }
-#awards{
-  width: 220px;
-  height: 145px;
-}
 
-.signature{
-  text-align: right;
-  font-style: italic;
-  margin-left: 75%;
-}
 #footer{
     text-align: center;
-}
-@media only screen and (max-width: 650px) {
-  #projects{
-    height: 150px;
-    width: 150px;
-  }
-  #poetry{
-    width: 150px;
-    height: 150px;
-  }
-  #awards{
-    width: 150px;
-    height: 150px;
-  }
-  #research{
-    width:310px;
-    height: 150px;
-  }
 }
