@@ -1,0 +1,226 @@
+{
+  "skill_sets": [
+    {
+      "id": "pl",
+      "name": "Programming Languages",
+      "skills": [
+        {
+          "id": "python",
+          "name": "Python : Advanced",
+          "icon": "python",
+          "sub_skills":[]
+        },
+        {
+          "id": "javascript",
+          "name": "Javascript : Intermediate",
+          "icon": "javascript",
+          "sub_skills":[]
+        },
+        {
+          "id": "Java",
+          "name": "Java : Intermediate",
+          "icon": "java",
+          "sub_skills":[]
+        },
+        {
+          "id": "html-skill",
+          "name": "HTML : Intermediate",
+          "icon": "python",
+          "sub_skills":[]
+        },
+        {
+          "id": "css",
+          "name": "CSS : Intermediate",
+          "icon": "css",
+          "sub_skills":[]
+        },
+        {
+          "id": "SQL",
+          "name": "SQL : Intermediate",
+          "icon": "sql",
+          "sub_skills":[]
+        },
+        {
+          "id": "go",
+          "name": "Go : Basic",
+          "icon": "golang",
+          "sub_skills":[]
+        },
+        {
+          "id": "c++",
+          "name": "C++ : Basic",
+          "icon": "c++",
+          "sub_skills":[]
+        }
+      ]
+    },
+    {
+      "id": "Frameworks",
+      "name": "Frameworks",
+      "skills": [
+        {
+          "id": "dj",
+          "name": "Django",
+          "icon": "django",
+          "sub_skills": []
+        },
+        {
+          "id": "flask",
+          "name": "Flask",
+          "icon": "flask",
+          "sub_skills": []
+        },
+        {
+          "id": "jQuery",
+          "name": "jQuery",
+          "icon": "jquery",
+          "sub_skills": []
+        },
+        {
+          "id": "bootstrap-skill",
+          "name": "Bootstrap",
+          "icon": "bootstrap",
+          "sub_skills": []
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "icon": "react",
+          "sub_skills": []
+        },
+        {
+          "id": "of",
+          "name": "OpenFrameworks",
+          "icon": "openframeworks",
+          "sub_skills": []
+        },
+        {
+          "id": "restify",
+          "name": "Restify",
+          "icon": "restify",
+          "sub_skills": []
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools",
+      "skills": [
+        {
+          "id": "jenkins",
+          "name": "Jenkins",
+          "icon": "jenkins",
+          "sub_skills": []
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "icon": "git",
+          "sub_skills": []
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "sub_skills": []
+        },
+        {
+          "id": "bootstrap-skill",
+          "name": "Bootstrap",
+          "icon": "bootstrap",
+          "sub_skills": []
+        },
+        {
+          "id": "mariadb",
+          "name": "Maria DB",
+          "icon": "mariadb",
+          "sub_skills": []
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "icon": "docker",
+          "sub_skills": []
+        },
+        {
+          "id": "selenium",
+          "name": "Selenium",
+          "icon": "selenium",
+          "sub_skills": []
+        },
+        {
+          "id": "heroku",
+          "name": "Heroku",
+          "icon": "heroku",
+          "sub_skills": []
+        },
+        {
+          "id": "nodejs",
+          "name": "NodeJS",
+          "icon": "nodejs",
+          "sub_skills": []
+        },
+        {
+          "id": "jira",
+          "name": "Jira",
+          "icon": "jira",
+          "sub_skills": []
+        },
+        {
+          "id": "travis",
+          "name": "Travis CI",
+          "icon": "travis",
+          "sub_skills": []
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other Skills",
+      "skills": [
+        {
+          "id": "public-speaking",
+          "name": "Public Speaking",
+          "icon": "public-speaking",
+          "sub_skills": []
+        },
+        {
+          "id": "leadership",
+          "name": "Leadership",
+          "icon": "leadership",
+          "sub_skills": []
+        },
+        {
+          "id": "research",
+          "name": "Research",
+          "icon": "research",
+          "sub_skills": []
+        },
+        {
+          "id": "poetry",
+          "name": "Poetry",
+          "icon": "poetry",
+          "sub_skills": []
+        },
+        {
+          "id": "3d-printing",
+          "name": "3D Printing",
+          "icon": "3d-printing",
+          "sub_skills": []
+        },
+        {
+          "id": "raspberry-pi",
+          "name": "Raspberry Pi",
+          "icon": "raspberry-pi",
+          "sub_skills": []
+        },
+        {
+          "id": "arduino",
+          "name": "Arduino",
+          "icon": "arduino",
+          "sub_skills": []
+        }
+      ]
+    }
+  ]
+}

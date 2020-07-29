@@ -1,74 +1,34 @@
 <h3>Tools & Skills</h3>
-<div class="container">
-    <div class="row ">
-        <div class="col-md-3 col-sm-6">
-            <div class="card bg-light skill-card" >
-                <div class="card-header">
-                    Programming Languages
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/python.png"> Python : Advanced</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/javascript.png"> JavaScript : Intermediate</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/java.png"> Java : Intermediate</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/html.png"> HTML : Intermediate</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/css.png"> CSS : Intermediate</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/sql.png"> SQL : Intermediate</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/golang.png"> Go : Basic</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/c++.png"> C++ : Basic</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card bg-light skill-card" >
-                <div class="card-header">
-                    Frameworks
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/django.png"> Django</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/flask.png"> Flask</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/jquery.png"> jQuery</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/bootstrap.png"> Bootstrap</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/react.png">React</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/openframeworks.png">OpenFrameworks</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/restify.png">Restify</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card bg-light skill-card" >
-                <div class="card-header">
-                    Tools
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/jenkins.png"> Jenkins</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/git.png"> Git</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/postgresql.png"> PostgreSQL</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/mariadb.png"> MariaDB</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/docker.png"> Docker</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/selenium.png"> Selenium</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/heroku.png"> Heroku</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/nodejs.png"> NodeJS</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/jira.png"> Jira</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/travis.png"> Travis CI</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="card bg-light skill-card" >
-                <div class="card-header">
-                    Other Skills
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/public-speaking.png"> Public Speaking</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/leadership.png"> Leadership</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/research.png"> Research</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/poetry.png"> Poetry</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/3d-printing.png"> 3D Printing</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/raspberry-pi.png"> Raspberry Pi</li>
-                    <li class="list-group-item"><img class="skill-icon" src="img/icons/arduino.png"> Arduino</li>
-                </ul>
-            </div>
-        </div>
+<div id="skills" class="container">
+    <div class="row">
 
     </div>
 </div>
+<script>
+    $(function(){
+        $.getJSON('skills.json', function(data){
+            $.each(data['skill_sets'], function(){
+                $('#skills').find(".row").append(`
+                    <div class="col-md-3 col-sm-6">
+                        <div id="${this['id']}-card" class="card bg-light skill-card" >
+                            <div class="card-header">
+                                ${this['name']}
+                            </div>
+                            <ul id="${this['id']}-skill-list" class="list-group list-group-flush">
+                            </ul>
+                        </div>
+                    </div>
+                `)
+                let id = this['id'];
+                console.log("Loop per set")
+                console.log(this['id'])
+                $.each(this['skills'], function(){
+                    console.log("Loop per skill")
+                    console.log(this['id']);
+                    $("#" + id + "-skill-list").append(`<li id="${this['id']}" class="list-group-item"><img class="skill-icon" src="img/icons/${this['icon']}.png"> ${this['name']}</li>`)
+                })
+                $('[data-toggle="tooltip"]').tooltip();
+        })
+    })
+    })
+</script>
