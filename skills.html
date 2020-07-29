@@ -23,8 +23,6 @@
                 console.log("Loop per set")
                 console.log(this['id'])
                 $.each(this['skills'], function(){
-                    console.log("Loop per skill")
-                    console.log(this['id']);
                     $("#" + id + "-skill-list").append(`<li id="${this['id']}" class="list-group-item"><img class="skill-icon" src="img/icons/${this['icon']}.png"> ${this['name']}</li>`)
                 })
                 $('[data-toggle="tooltip"]').tooltip();
