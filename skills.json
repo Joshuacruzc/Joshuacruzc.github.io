@@ -125,12 +125,6 @@
           "sub_skills": []
         },
         {
-          "id": "bootstrap-skill",
-          "name": "Bootstrap",
-          "icon": "bootstrap",
-          "sub_skills": []
-        },
-        {
           "id": "mariadb",
           "name": "Maria DB",
           "icon": "mariadb",
