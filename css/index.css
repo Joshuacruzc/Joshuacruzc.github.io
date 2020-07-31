@@ -16,21 +16,22 @@ button:hover{
     width: 40px;
 }
 #wmessage{
-    font-family: consolas;
+    font-family: "monospace";
     font-size: 1.9em;text-align: center;
     animation: type 2s steps(23);
     overflow: hidden;
     white-space: nowrap;
     border-right: 0.1em solid black;
-    width: 13em;
+    width: 10.5em;
     margin: auto;
+    padding: 2px;
 }
 @keyframes type {
   0%{
     width:0em;
     }
     100%{
-      width:13em;
+      width:10.5em;
     }
 }
 /* Style the tab */
