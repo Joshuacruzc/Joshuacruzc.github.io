@@ -1,19 +1,6 @@
 {
   "software": [
     {
-      "id": "skipster",
-      "name":  "Skipster",
-      "description": "Python web app that uses Spotify api to build playlists based on user votes.",
-      "link": "https://github.com/Joshuacruzc/Skipster",
-      "skills": [
-        "python",
-        "flask",
-        "javascript",
-        "bootstrap",
-        "git"
-      ]
-    },
-    {
       "id": "CA-API",
       "name":  "CurriculumAlgorithm (API)",
       "description": "Python API that dynamically keeps tracks of curriculum and remaining courses.",
