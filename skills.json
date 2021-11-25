@@ -105,6 +105,12 @@
           "name": "Restify",
           "icon": "restify",
           "sub_skills": []
+        },
+        {
+          "id": "dot-net",
+          "name": ".Net",
+          "icon": "Dot-NET",
+          "sub_skills": []
         }
       ]
     },
