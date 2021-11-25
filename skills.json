@@ -143,6 +143,12 @@
           "sub_skills": []
         },
         {
+          "id": "sql-server",
+          "name": "Microsoft SQL Server",
+          "icon": "sql-server",
+          "sub_skills": []
+        },
+        {
           "id": "docker",
           "name": "Docker",
           "icon": "docker",
