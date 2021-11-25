@@ -22,7 +22,7 @@
                 let id = this['id'];
                 console.log(this['id'])
                 $.each(this['skills'], function(){
-                    $("#" + id + "-skill-list").append(`<li id="${this['id']}" class="list-group-item"><img class="skill-icon" src="img/icons/${this['icon']}.png"> ${this['name']}</li>`)
+                    $("#" + id + "-skill-list").append(`<li id="${this['id']}" class="list-group-item"><img class="skill-icon" src="img/icons/${encodeURIComponent(this['icon'])}.png"> ${this['name']}</li>`)
                 })
                 $('[data-toggle="tooltip"]').tooltip();
         })

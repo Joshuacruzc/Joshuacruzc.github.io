@@ -131,7 +131,10 @@ button:hover{
 
 }
 .exp-img{
+    padding-top: 5%;
+    padding-bottom: 5%;
     margin: auto;
+    /*margin: auto;*/
     display: block;
     width: auto;
     max-height: 200px;

@@ -23,6 +23,12 @@
           "sub_skills":[]
         },
         {
+          "id": "SQL",
+          "name": "SQL : Intermediate",
+          "icon": "sql",
+          "sub_skills":[]
+        },
+        {
           "id": "html-skill",
           "name": "HTML : Intermediate",
           "icon": "html",
@@ -35,12 +41,6 @@
           "sub_skills":[]
         },
         {
-          "id": "SQL",
-          "name": "SQL : Intermediate",
-          "icon": "sql",
-          "sub_skills":[]
-        },
-        {
           "id": "go",
           "name": "Go : Basic",
           "icon": "golang",
@@ -50,6 +50,12 @@
           "id": "c++",
           "name": "C++ : Basic",
           "icon": "c++",
+          "sub_skills":[]
+        },
+        {
+          "id": "c#",
+          "name": "C# : Basic",
+          "icon": "C#",
           "sub_skills":[]
         }
       ]

@@ -54,7 +54,7 @@
                     $("#" + id + "InformationBullets").append(`<li>${this}</li>`)
                 })
                 $.each(this['skills'], function(){
-                    $("#" + id + "SkillIcons").append(`<img class="skill-icon" data-toggle="tooltip" data-placement="top" title=${this} src="img/icons/${this}.png" alt="">`)
+                    $("#" + id + "SkillIcons").append(`<img class="skill-icon" data-toggle="tooltip" data-placement="top" title=${this} src="img/icons/${encodeURIComponent(this)}.png" alt="">`)
                 })
                 $('[data-toggle="tooltip"]').tooltip();
             })

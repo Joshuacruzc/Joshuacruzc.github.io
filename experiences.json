@@ -1,13 +1,56 @@
 {
   "experiences": [
     {
+      "id": "abarca",
+      "positionName": "Software Engineering COOP",
+      "companyName": "Abarca Health",
+      "picture": "abarca.png",
+      "experienceLocation": "San Juan, Puerto Rico",
+      "startDate": "August 2021",
+      "endDate": "Present",
+      "color": "#800187",
+      "informationBullets": [
+        "Extract client customizable features from .NET web application into a separate service with client-facing interface"
+      ],
+      "skills": [
+        "C#",
+        "sql",
+        "javascript",
+        "git",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "id": "bloomberg",
+      "positionName": "Software Engineering Intern",
+      "companyName": "Bloomberg LP",
+      "picture": "bloomberg.png",
+      "experienceLocation": "New York, New York, USA",
+      "startDate": "June 2021",
+      "endDate": "August 2021",
+      "color": "#000000",
+      "informationBullets": [
+        "Created an API service that provided quality assurance team data points from a live data pipeline using Python and internal frameworks",
+        "Developed microservice for calculating return value for groups of stocks under a certain index, to QA newer calculation methods",
+        "Leveraged internal interface to add plugin for parsing data from index providers that was ultimately used to publish production level index data"
+      ],
+      "skills": [
+        "python",
+        "sql",
+        "javascript",
+        "git",
+        "jira"
+      ]
+    },
+    {
       "id": "abartys",
       "positionName": "Full-stack Developer Intern",
       "companyName": "Abartys Health",
       "picture": "abartys.png",
       "experienceLocation": "San Juan, Puerto Rico",
       "startDate": "February 2020",
-      "endDate": "Present",
+      "endDate": "May 2021",
       "color": "#3db2cb",
       "informationBullets": [
         "Extract data from multiple MySQL Databases to provide insight on customer usage of company products",
@@ -33,7 +76,7 @@
       "picture": "rumbus.png",
       "experienceLocation": "University of Puerto Rico-Mayagüez",
       "startDate": "November 2019",
-      "endDate": "Present",
+      "endDate": "May 2021",
       "color": "darkorange",
       "informationBullets": [
         "Build REST Backend using restify framework for NodeJS",
@@ -57,7 +100,7 @@
       "picture": "CSE.png",
       "experienceLocation": "University of Puerto Rico-Mayagüez",
       "startDate": "August 2019",
-      "endDate": "Present",
+      "endDate": "May 2021",
       "color": "green",
       "informationBullets": [
         "Collaborate with Professors, and other Aides to provide useful and diverse learning resources for students taking the course",
